@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Marina Store</title>
+</head>
+
+<body>
+    <div id="supermain">
+        <header class="header">
+            <a href="../index.html">
+                <img class="header__logo" src="../img/logo.png" alt"Marina Store">
+            </a>
+
+            <div class="header__search">
+                <input type="text" class="header__searchInput" placeholder="Buscar productos">
+                <img class="header__searchIcon" src="../icons/magnifying-glass-solid.svg" alt="search">
+            </div>
+
+            <div class="header__menu">
+                <div class="header__menuButton" id="menuButton">
+                    <img src="../icons/bars-solid.svg" alt="menu">
+                    <img src="../icons/user-solid.svg" alt="usuario">
+                </div>
+
+                <div class="header__userMenu" id="userMenu">
+                    <div id="notLoggedIn">
+                        <a href="./register.html">Registrate</a>
+                        <a href="./login.html">Iniciar sesión</a>
+                    </div>
+                    <div id="loggedIn">
+                        <a href="#" id="logOut">Cerrar sesión</a>
+                        <a href="./cart.html">Carrito</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="cart__products" id="cartProducts">
+                <span class="product-not-found">Aún no hay productos en el carrito.</span>
+                <a class="product-not-found" href="../index.html">Seguir comprando</a>
+            </div>
+        </main>
+
+        <footer>© 2023 Marina Store. Todos los derechos reservados.</footer>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../scripts/cargaCarrito.js"></script>
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>
+
